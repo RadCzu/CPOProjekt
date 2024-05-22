@@ -1,4 +1,5 @@
 import os
+from generation import Generation
 
 class KerasNertworkOptimizer:
     def __init__(self, candidates, output_dir, model, name):
@@ -10,4 +11,4 @@ class KerasNertworkOptimizer:
     def optimize(self):
         learning_dir = os.path.join(self.output_dir, self.name)
         os.makedirs(learning_dir, exist_ok=True)
-        Generation()
+        generation1 = Generation()
