@@ -26,7 +26,7 @@ struktura projektu wyglądała następująco:
       - validate.py (kod do walidacji z konkretnego zbioru danych)
       - plot_model (skrypt do obrazowania konkretnego modelu)
       - teacher.py (warianty uczenia)
-      - test_and_plot.py (skrypt do dalszego uczenia dwóch wybranych sieci i porównania ich
-      - generation.py (główna klasa projektu, niezależna specyfikacji)
+      - test_and_plot.py (skrypt do dalszego uczenia dwóch wybranych sieci i porównania ich)
+      - generation.py (główna klasa projektu, niezależna od specyfikacji)
       - innitial.py (skrypt do tworzenia pierwszego modelu)
       - find_layer_edits (skrypt do analizy nauki, automatycznie sprawdza czy dodawane były jakiekolwiek warstwy w trakcie uczenia)
