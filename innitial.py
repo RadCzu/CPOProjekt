@@ -7,6 +7,10 @@ from keras.optimizers import Adam
 import matplotlib.pyplot as plt
 import os
 
+# ==============================
+# skrypt używany do tworzenia pliku modelu początkowego
+# ==============================
+
 # Load the dataset information from cards.csv
 dataset_info = pd.read_csv('C:\\Users\\Radek\\python_env\\ProjektCPO\\src\\data\\cards.csv')
 # dataset_info = pd.read_csv('D:\\envs\\215ICCzujR_env\\Materials\\projekt\\data\\cards.csv')

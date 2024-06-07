@@ -14,12 +14,10 @@ class TestGeneration(unittest.TestCase):
         self.directory = "C:\\Users\\Radek\\python_env\\ProjektCPO\\src\\models\\TESTGEN1"
         self.generation = Generation(self.candidates, self.directory, self.number, self.mutability, self.mutations)
 
-        # Create a temporary directory
         self.test_dir = tempfile.TemporaryDirectory()
         print(self.test_dir.name)
         self.directory = self.test_dir.name
 
-        # Create two mock models and save them to the temporary directory
         self.create_and_save_model('test_model_1.keras')
         self.create_and_save_model('test_model_2.keras')
 
@@ -42,7 +40,6 @@ class TestGeneration(unittest.TestCase):
     def test_load_models_from_directory(self):
         models = self.generation.load_models_from_directory(self.directory)
 
-        # Assertions to verify the behavior
         self.assertEqual(len(models), 2)
         self.assertEqual(models[0].name, 'test_model_1')
         self.assertEqual(models[1].name, 'test_model_2')

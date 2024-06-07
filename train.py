@@ -60,7 +60,6 @@ def train(model, epochs, model_path):
         )
     except Exception as e:
         print(f"Error occurred during training: {e}")
-        # Delete the wrongly assembled network
         os.remove(model_path)
         return
     finally:
@@ -68,13 +67,3 @@ def train(model, epochs, model_path):
         tf.keras.backend.clear_session()
         del model
         gc.collect()
-    # # Plot learning
-    # plt.plot(history.history['accuracy'], label='Training Accuracy')
-    # plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
-    # plt.xlabel('Epoch')
-    # plt.ylabel('Accuracy')
-    # plt.title('Training and Validation Accuracy')
-    # plt.legend()
-    # plt.savefig('learning_curves.png')
-    # plt.show(
-    # Save the model

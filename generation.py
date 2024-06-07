@@ -94,7 +94,6 @@ class Generation:
     def replicate_model(self, model):
         new_model = Sequential()
 
-        # Iterate over the layers of the original model
         for i, layer in enumerate(model.layers):
             new_layer = type(layer).from_config(layer.get_config())
             new_model.add(new_layer)
@@ -215,7 +214,6 @@ class Generation:
     def remove_layer(self, model, layer_index):
         new_model = Sequential()
 
-        # Iterate over the layers of the original model
         for i, layer in enumerate(model.layers):
             if i == layer_index:
                 continue
@@ -229,7 +227,6 @@ class Generation:
     def add_layer(self, model, layer_index, the_new_layer):
         new_model = Sequential()
 
-        # Iterate over the layers of the original model
         for i, layer in enumerate(model.layers):
             if i == layer_index:
                 new_model.add(the_new_layer)
