@@ -9,12 +9,12 @@ struktura projektu wyglądała następująco:
     - test_run.keras(moja początkowa sieć)
     - testrun (folder do tego procesu neuroewolucji)
       - gen1
-        - test_model_0.keras
-        - test_model_1.keras
+        - test_run_0.keras
+        - test_run_1.keras
         - ...
       - gen2
-        - test_model_1_0.keras
-        - test_model_1_1.keras
+        - test_run_1_0.keras
+        - test_run_1_1.keras
         - ...
       - ...
   - src
