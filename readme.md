@@ -55,7 +55,7 @@ metoda generation.mutate() wykorzystuje metody:
   - replicate_model() - do stworzenia nowego modelu identycznego jak ten kopjowany
   - get_random_editable_layer_index() - zwraca indeks warsty której można zmienić ilość neuronów
   - change_nodes() - do edycji ilości neuronów w warstwie, mutacje mają 50% szansy na dodanie i 30% na odjęcie neuronów w ilości losowej od 1 do intensywności mutacji (mutability). Odejmowanie jest 2 zawsze połową wylosowanej wartości.
-  - add_random_layer() - dodaje losowo warstwę CONV2D lub DENSE, w indeksie otrzymanym przez get_random_editable_layer_index() za pomocą metod:
+  - add_random_layer() - 20% szansy na wywołanie. Dodaje losowo warstwę CONV2D lub DENSE, w indeksie otrzymanym przez get_random_editable_layer_index() za pomocą metod:
     - add_dense_layer() - dodaje watstwę DENSE za pomocą metody add_layer()
     - add_conv_layer() - dodaje watstwę CONV2D i MAXPOOLING za pomocą metody add_layer()
 6. trenowane są wszystkie modele w folderze roboczym za pomocą metody train_models() wykorzystującej skrypt train.py
