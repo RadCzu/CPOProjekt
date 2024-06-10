@@ -30,3 +30,13 @@ struktura projektu wyglądała następująco:
       - generation.py (główna klasa projektu, niezależna od specyfikacji)
       - innitial.py (skrypt do tworzenia pierwszego modelu)
       - find_layer_edits (skrypt do analizy nauki, automatycznie sprawdza czy dodawane były jakiekolwiek warstwy w trakcie uczenia)
+
+Opis uczenia:
+1. skrypt teacher.py przyjmuje na wejściu parametry:
+  - ilość generacji (generations)
+  - intensywność generacji (mutability)
+  - ilość mutacji na generację (mutations)
+  - ilość modeli przechodządych do dalszej generacji (candidates)
+  - ścieżka modelu początkowego
+  - ilość epok nauki na generację (epochs)
+
